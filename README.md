@@ -1,4 +1,4 @@
-# Thread
+# গল্প হোক!
 
 A compact, responsive one-to-one chat application built with **React + Vite + Tailwind CSS + React Router**, **Express + Socket.IO**, and **MongoDB + Mongoose**. Authentication uses signed JWTs in HttpOnly cookies and bcrypt password hashing through the `bcryptjs` implementation.
 
