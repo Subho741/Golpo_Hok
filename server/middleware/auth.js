@@ -6,7 +6,7 @@ export function cookieOptions(cfg) {
   return {
     httpOnly: true,
     secure: cfg.production,
-    sameSite: "strict",
+    sameSite: cfg.production ? "none" : "strict",
     path: "/",
     maxAge: 7 * 86400000,
   };

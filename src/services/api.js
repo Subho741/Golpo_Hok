@@ -1,5 +1,5 @@
 export async function api(path, options = {}) {
-  const response = await fetch(`/api${path}`, {
+  const response = await fetch(`${import.meta.env.VITE_SOCKET_URL}/api${path}`, {
     credentials: "include",
     ...options,
     headers: { "Content-Type": "application/json", ...options.headers },
